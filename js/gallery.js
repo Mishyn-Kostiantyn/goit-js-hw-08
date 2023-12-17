@@ -68,9 +68,7 @@ const images = [
 ];
 
 const galleryBox = document.querySelector('.gallery');
-console.log(galleryBox);
 const markupImages = createImageCardMarkup(images);
-console.log(markupImages);
 galleryBox.insertAdjacentHTML("beforeend", markupImages);
 function createImageCardMarkup(images) {
   return images.map(({ preview, original, description }) => {
